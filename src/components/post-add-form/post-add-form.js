@@ -24,12 +24,13 @@ export default class PostAddForm extends Component {
         <input
           value={this.state.text}
           type="text"
-          placeholder="Новая запись"
+          placeholder="Add todo"
           className="form-control new-post-label"
           onChange={this.onValueChange}
+          required
         />
         <button type="submit" className="btn btn-outline-secondary">
-          Добавить
+          Add
         </button>
       </form>
     );
